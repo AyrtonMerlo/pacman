@@ -1,3 +1,7 @@
+import scene1 from "./scene1.js";
+import scene2 from "./scene2.js";
+import scene3 from "./scene3.js";
+
 var config = {
   type: Phaser.AUTO,
   width: 600,
@@ -17,5 +21,3 @@ var config = {
 
 var game = new Phaser.Game(config);
 
-var player
-var cursors

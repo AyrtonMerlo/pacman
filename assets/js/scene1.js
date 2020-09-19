@@ -4,6 +4,7 @@ class scene1 extends Phaser.Scene {
   }
 preload(){
   this.load.image('background', 'assets/images/fondo.jpg')
+  this.load.image('malo', 'assets/images/malo.png')
   this.load.image('fan', 'assets/images/fanro.png');
   this.load.tilemapTiledJSON('map', 'assets/tilemaps/maps/Tilemap1.json');
   this.load.tilemapTiledJSON('map1', 'assets/tilemaps/maps/Tilemap2.json');
@@ -22,5 +23,6 @@ create(){
  b2.setInteractive()
  b2.on('pointerdown', ()=> this.scene.start('s3') )
 }
-  
+
 }
+export default scene1
